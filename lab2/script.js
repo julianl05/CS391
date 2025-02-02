@@ -9,6 +9,9 @@ function checkAge() {
     else if (age % 1 != 0){
         errorMessage = "Invalid input, not an integer."
     }
+    else if (age < 0) {
+        errorMessage = "Invalid input, negative number."
+    }
     else if (age < 18) {
         errorMessage = "You are under 18, you are not allowed to enter."
     } 
